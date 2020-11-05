@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>Witaj na stronie przedmiotowej IT!</title>
+	<meta name="description" content="co to zaś było?">
+	<meta name="keywords" content="Live smart!">
+	<meta name="author" content="KO">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- zamknięcie znacznika meta i otwarcie skryptu na animowany title strony -->
+    <script language=javascript>
+    var rev = "fwd";
+    function titlebar(val){
+        var msg  = " Witaj na stronie przedmiotowej IT! ";
+        var res = " ";
+        var speed = 100;
+        var pos = val;
+        msg = "   |-"+msg+"-|";
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+                pos = pos+1;
+                scroll = msg.substr(0,pos);
+                document.title = scroll;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "bwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+        else {
+            if(pos > 0) {
+                pos = pos-1;
+                var ale = le-pos;
+                scrol = msg.substr(ale,le);
+                document.title = scrol;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "fwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+    }
+    titlebar(0);
+</script>
+    <!--zamknięcie skryptu i otwarcie css --> 
+<style>
+    body {
+        background-color: #085CA6;
+    }
+    
+    #container {
+        margin: 0 auto;
+        width: 1200px;
+        height: 1000px;
+        background-color: #B4F277;
+        -webkit-box-shadow: 0px 0px 31px 8px rgba(180,242,119,1);
+        -moz-box-shadow: 0px 0px 31px 8px rgba(180,242,119,1);
+        box-shadow: 0px 0px 31px 8px rgba(180,242,119,1);
+    }
+    
+    #header {
+        width: 100%;
+        height: calc(10% - 1px);
+        border-bottom: 1px dashed black;
+    }
+    
+    #header1 {
+        width: 20%;
+        height: 100%;
+        float: left;
+        border-right: 1px dashed black;
+    }
+    
+    #header1 > a > img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #header2 {
+        width: calc(75% - 1px);
+        height: 100%;
+        float: left;
+    }
+    
+    #header2 > p {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    
+    #ContainerBody {
+        width: 100%;
+        height: calc(90% - 1px);
+    }
+    
+    #Menu {
+        width: calc(20% - 1px);
+        height: 100%;
+        float: left;
+        border-right: 1px dashed black;
+    }
+    
+    .ListItem {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .ListItem > a:link {
+        color: #085CA6;
+        text-decoration: none;
+    }
+    
+    .ListItem > a:visited {
+        color: #49C2F2;
+        text-decoration: none;
+    }
+    
+    #MenuHeader {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    #ContainerContent {
+        width: 80%;
+        height: 100%;
+        float: left;
+        background-color: #085CA6;
+    }
+    
+    #ContainerContent > iframe {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #MenuInfoText {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+    #MenuAuthorInfo {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 10px;
+        font-weight: 800;
+    }
+    
+</style>
+</head>
+<!-- zamknięcie css + head i otwarcie prawidłowej zawartości strony internetowej -->
+<body>
+    <div id="container">
+        <!-- otwarcie diva z nagłówkiem elementu container -->
+        <div id="header">
+            <div id="header1"><a href="index.html"><img src="img/logo.png"></a></div>
+            <div id="header2"><p>Witaj na stronie przedmiotowej IT!</p></div>
+        </div>
+        <!-- zamknięcie diva z nagłówkiem elementu container -->
+        <!-- otwarcie diva z ciałem elementu container -->
+        <div id="ContainerBody">
+            <!-- otwarcie diva z listą linków do stron internetowych -->
+            <div id="Menu">
+                <p id="MenuHeader">Wybierz, dokąd cię przenieść:</p>
+                <p class="ListItem" style="padding-top: 20px;"><a href="#">asd</a></p>
+                <p class="ListItem"><a href="index.html" target="iframe_target">asd</a></p>
+                <p class="ListItem"><a href="#" target="iframe_target">asd</a></p>
+                <p class="ListItem"><a href="#" target="iframe_target">asd</a></p>
+                <p id="MenuInfoText">Po naciśnięciu na link, strona załaduje się w okienku po prawej!</p>
+                <p id="MenuAuthorInfo">&copy; Kamil Oberaj 2020</p>
+            </div>
+            <!-- zamknięcie diva z listą linków do stron internetowych -->
+            <div id="ContainerContent">
+                
+                <iframe name="iframe_target" title="Tutaj ładuje się strona" frameBorder="0"></iframe>
+            </div>
+        </div>
+        <!-- zamknięcie diva z ciałem elementu container -->
+    </div>
+</body>
+</html>
