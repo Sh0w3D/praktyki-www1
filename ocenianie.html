@@ -47,9 +47,53 @@
     }
     titlebar(0);
 </script>
+    <style>
+        body {
+            background-color: #0D0D0D;
+            margin: 0;
+            color: #F2F2F2;
+            font-family: lato;
+        }
+        
+        header {
+            color: #038C33;
+            width: 100%;
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border-bottom: white 1px dotted;
+        }
+        
+        header > a > img {
+            width: 100px;
+            height: 100%;
+            float: left;
+        }
+        
+        header > h1 {
+            font-family: lato;
+            font-weight: bolder;
+            letter-spacing: inherit;
+            font-size: 50px;
+        }
+        
+        #iframePDF {
+            background-color: white;
+            width: 1000px;
+            height: 900px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-    
+<header>
+    <a href="#"><img src="img/LogoZST.png"></a>
+    <h1>Witaj na stronie! Tutaj znajdziesz zasady oceniania</h1>
+</header>
+<div style="width: 100%; height: 10px;"></div>
+<iframe id="iframePDF" src="D20190373.pdf"></iframe>
 
 </body>
 </html>
