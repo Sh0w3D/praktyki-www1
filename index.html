@@ -154,6 +154,33 @@
         font-weight: 800;
     }
     
+    #ContainerContent > p {
+        color: white;
+        font-family: lato;
+    }
+    
+    #IMG1 {
+        float: left;
+    }
+    
+    #IMG1:hover {
+        transform: scale(1.5);
+    }
+    #IMG2 {
+        float: right;
+    }
+    #IMG2:hover {
+        transform: scale(1.5);
+    }
+    #IMG3 {
+        margin: 0 auto;
+    }
+    #IMG3:hover {
+        transform: scale(1.5);
+    }
+    
+    
+    
 </style>
 </head>
 <!-- zamknięcie css + head i otwarcie prawidłowej zawartości strony internetowej -->
@@ -171,16 +198,24 @@
             <div id="Menu">
                 <p id="MenuHeader">Wybierz, dokąd cię przenieść:</p>
                 <p class="ListItem" style="padding-top: 20px;"><a href="ocenianie.html">Zasady oceniania</a></p>
-                <p class="ListItem"><a href="index.html" target="iframe_target">asd</a></p>
-                <p class="ListItem"><a href="#" target="iframe_target">asd</a></p>
-                <p class="ListItem"><a href="#" target="iframe_target">asd</a></p>
+                <p class="ListItem"><a href="https://www.zstrybnik.pl/">Strona Szkolna</a></p>
+                <p class="ListItem"><a href="https://www.zstrybnik.pl/html">Plan lekcji</a></p>
                 <p id="MenuInfoText">Po naciśnięciu na link, strona załaduje się w okienku po prawej!</p>
                 <p id="MenuAuthorInfo">&copy; Kamil Oberaj 2020</p>
             </div>
             <!-- zamknięcie diva z listą linków do stron internetowych -->
             <div id="ContainerContent">
+                <p style="padding-left: 2px;">
+                <b>Informatyka - </b> nauka ścisła i techniczna o przetwarzaniu informacji oraz naturalnych i inżynierskich systemach <br />
+                    obliczeniowych. Zajmuje się badaniem natury i metodologii obliczeń, opisem procesow algorytmicznych oraz tworzeniem <br />
+                    sprzętu i programow komputerowych.
+                    <br /> <br />
+                    <b>Przykładowe obrazy ukazujące informatykę:</b><br /> <br />
+                    <img src="img/programowanie.png" id="IMG1">
+                    <img src="img/bramki.png" id="IMG2">
+                    <img src="img/AI.png" id="IMG3">
+                </p>
                 
-                <iframe name="iframe_target" title="Tutaj ładuje się strona" frameBorder="0"></iframe>
             </div>
         </div>
         <!-- zamknięcie diva z ciałem elementu container -->
