@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>Witaj na portalu z wiadomościami!</title>
+	<meta name="description" content="co to zaś było?">
+	<meta name="keywords" content="Live smart!">
+	<meta name="author" content="KO">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/fontello.css">	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    
+<style>
+
+    body {
+	   background-color: #5CDB95;
+	   font-family: 'Open Sans', sans-serif;
+	   font-size: 20px;
+	   color: #05386B;
+        margin: 0;
+    }
+    header {
+        width: 100%;
+        height: 150px;
+    }
+    
+    #logo {
+        padding-left: 2%;
+        width: 150px;
+        height: 150px;
+        float: left;
+    }
+    
+    #logo > a > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    header > h1 {
+	   font-size: 32px;
+	   font-weight: 400;
+	   margin-top: 45px;	
+	   margin-bottom: 30px;
+	   letter-spacing: 8px;
+	   text-transform: uppercase;
+       float: left;
+       padding-left: 56px;
+    }
+    
+    article {
+        width: 1500px;
+        height: 750px;  
+        margin: 0 auto;
+    }
+    
+    #WeatherLeft {
+        width: 500px;
+        height: 100%;
+        float: left;
+    }
+    
+    #WeatherMove1 {
+        width: 150px;
+        height: 157px;
+        margin: 0 auto;
+        padding-top: 220px;
+    }
+    
+    #WeatherMid {
+        width: 500px;
+        height: 100%;
+        float: left;
+    }
+        
+    #WeatherMove2 {
+        width: 300px;
+        height: 350px;
+        margin: 0 auto;
+        padding-top: 160px;
+    }
+    
+    #WeatherRight {
+        width: 500px;
+        height: 100%;
+        float: left;
+    }
+    
+    #WeatherMove3 {
+        width: 350px;
+        height: 330px;
+        margin: 0 auto;
+        padding-top: 160px;
+    }
+    
+    
+</style>
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="index2.html"><img src="img-portal/logo.png"></a></div>
+        <h1><b>Witaj, tutaj sprawdzisz pogodę!</b></h1>
+    </header>
+    
+    <article>
+        <div id="WeatherLeft">
+            <div id="WeatherMove1">
+                <iframe frameborder='no' height='157' scrolling='no' src='https://dobrapogoda24.pl/widgets/sq?city=rybnik' title='Prognoza pogody' width='150'></iframe>
+            </div>
+        </div>
+        <div id="WeatherMid">
+            <div id="WeatherMove2">
+                <iframe frameborder='no' height='350' scrolling='no' src='https://dobrapogoda24.pl/widgets/map?voivodeship=slaskie' title='Prognoza pogody' width='300'></iframe>
+            </div>
+        </div>
+        <div id="WeatherRight">
+            <div id="WeatherMove3">
+                <iframe frameborder='no' height='330' scrolling='no' src='https://dobrapogoda24.pl/widgets/mapa_polski' title='Prognoza pogody' width='350'></iframe>
+            </div>
+        </div>
+        
+    </article>
+</body>
+</html>
